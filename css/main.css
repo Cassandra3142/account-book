@@ -8,7 +8,6 @@
 .main-section img{
   width: 150px;
   height: 150px;
-  padding: 10px 0px;
 }
 
 .result {
@@ -18,7 +17,7 @@
 .account-book {
   width: 300px;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--content-background-color);
   border-radius: 10px;
   margin-top: 10px;
   display: flex;

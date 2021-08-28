@@ -1,0 +1,12 @@
+.screen {
+  width: 375px;
+  height: 812px;
+  border: 10px solid black;
+  border-radius: 20px;
+  /* background-color: rgb(249, 224, 0); */
+}
+
+.screen__real{
+  padding: 0px 25px;
+}
+

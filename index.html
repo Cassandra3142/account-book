@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="screen">
-    <div class="status-bar">
+    <header class="status-bar">
       <div class="status-bar__column">
         <span>10:00</span>
       </div>
@@ -27,25 +27,57 @@
           <i class="fas fa-battery-half"></i>
         </span>
       </div>
-    </div>
-    <header class="screen-header">
-      <span>오늘의 소비</span>
     </header>
-    <section class="main-section">
-      <img src="./img/piggy-bank-970340_640-removebg-preview.png">
-      <h2>안녕하세요!<br>지난 지출 내역을 확인하세요!</h2>
-      <div class="result">₩ </div>
-      <div class="account-book">
-        <div class="account-book__in account-book__all">
-          <h3>들어온 돈</h3>
-          <span class="account-book__content">₩ </span>
+    <main class="screen__real">
+      <header class="main-header">
+        <span>오늘의 소비</span>
+      </header>
+      <section class="main-section">
+        <img src="./img/piggy-bank-970340_640-removebg-preview.png">
+        <h2>안녕하세요!<br>지난 지출 내역을 확인하세요!</h2>
+        <div class="result">₩ </div>
+        <div class="account-book">
+          <div class="account-book__in account-book__all">
+            <h3>수입</h3>
+            <span class="account-book__content">₩ </span>
+          </div>
+          <div class="account-book__out account-book__all">
+            <h3>지출</h3>
+            <span class="account-book__content">₩ </span>
+          </div>
         </div>
-        <div class="account-book__out account-book__all">
-          <h3>나간 돈</h3>
-          <span class="account-book__content">₩ </span>
+      </section>
+      <section class="new-transaction">
+        <div class="new-transaction__title">
+          <h3>새로운 거래</h3>
         </div>
-      </div>
-    </section>
+        <form>
+          <div class="new-transaction__date">
+            <h4 class="new-transaction__subtitle">날짜</h4>
+            <div class="new-transaction__date__box">
+              <input type="number" placeholder="년">
+              <input type="number" placeholder="월">
+              <input type="number" placeholder="일">
+            </div>
+          </div>
+          <div class="new-transaction__content">
+            <h4 class="new-transaction__subtitle">내용</h4>
+              <div class="new-transaction__content__input">
+                <div class="new-transaction__content__input__button">
+                  <input type="button" value="수입">
+                  <input type="button" value="지출">
+                </div>
+                <input type="text" placeholder="수입/지출 내용을 입력하세요.">
+            </div>
+          </div>
+          <div class="new-transaction__price">
+            <h4 class="new-transaction__subtitle">금액</h4>
+            <input type="number" placeholder="금액을 입력하세요 (ex 10000)">
+          </div>
+          <input type="submit">
+        </form>
+      </section>
+    </main>
   </div>
 <script src="https://kit.fontawesome.com/d971984754.js" crossorigin="anonymous"></script>
 </body>
