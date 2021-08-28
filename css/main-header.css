@@ -1,7 +1,7 @@
 .main-header {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   border-bottom: var(--main-border);
   font-size: 22px;
   font-weight: 600;

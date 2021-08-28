@@ -9,25 +9,6 @@
 </head>
 <body>
   <div class="screen">
-    <header class="status-bar">
-      <div class="status-bar__column">
-        <span>10:00</span>
-      </div>
-      <div class="status-bar__column">
-        <!-- <div class="speaker"></div> -->
-      </div>
-      <div class="status-bar__column">
-        <span>
-          <i class="fas fa-signal"></i>
-        </span>
-        <span>
-          <i class="fas fa-wifi"></i>
-        </span>
-        <span>
-          <i class="fas fa-battery-half"></i>
-        </span>
-      </div>
-    </header>
     <main class="screen__real">
       <header class="main-header">
         <span>오늘의 소비</span>
@@ -45,6 +26,13 @@
             <h3>지출</h3>
             <span class="account-book__content">₩ </span>
           </div>
+        </div>
+      </section>
+      <section class="transaction-history">
+        <div class="transaction-history__title">
+          <span>전체 내역</span>
+          <span>수입 내역</span>
+          <span>지출 내역</span>
         </div>
       </section>
       <section class="new-transaction">
@@ -74,7 +62,7 @@
             <h4 class="new-transaction__subtitle">금액</h4>
             <input type="number" placeholder="금액을 입력하세요 (ex 10000)">
           </div>
-          <input type="submit">
+          <input class="submit" type="submit">
         </form>
       </section>
     </main>

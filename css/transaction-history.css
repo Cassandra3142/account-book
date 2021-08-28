@@ -1,0 +1,4 @@
+.transaction-history__title {
+  padding: 20px 0;
+  border-bottom: var(--main-border);
+}
