@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'status-bar.css';
+@import 'main.css';
 
 body {
   display: flex;
