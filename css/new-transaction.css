@@ -1,3 +1,7 @@
+form input {
+  height: 40px;
+}
+
 .new-transaction {
   display: flex;
   justify-content: center;
@@ -39,6 +43,11 @@
 .new-transaction__content__input__button {
   margin-bottom: 10px;
   display: flex;
+  background-color: white;
+}
+
+.new-transaction__content__input__button :hover {
+  background-color: #ffd400;
 }
 
 .new-transaction__content__input input {
@@ -57,3 +66,6 @@
 .submit {
   margin-bottom: 20px;
 }
+
+
+

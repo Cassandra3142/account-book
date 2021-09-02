@@ -34,6 +34,7 @@
           <span>수입 내역</span>
           <span>지출 내역</span>
         </div>
+        <ul class="transaction-list"></ul>
       </section>
       <section class="new-transaction">
         <div class="new-transaction__title">
@@ -43,30 +44,32 @@
           <div class="new-transaction__date">
             <h4 class="new-transaction__subtitle">날짜</h4>
             <div class="new-transaction__date__box">
-              <input type="number" placeholder="년">
-              <input type="number" placeholder="월">
-              <input type="number" placeholder="일">
+              <input class="years" type="number" placeholder="년">
+              <input class="months" type="number" placeholder="월">
+              <input class="dates" type="number" placeholder="일">
             </div>
           </div>
           <div class="new-transaction__content">
             <h4 class="new-transaction__subtitle">내용</h4>
               <div class="new-transaction__content__input">
                 <div class="new-transaction__content__input__button">
-                  <input type="button" value="수입">
-                  <input type="button" value="지출">
+                  <input class="income" type="button" value="수입">
+                  <input class="expenditure" type="button" value="지출">
                 </div>
-                <input type="text" placeholder="수입/지출 내용을 입력하세요.">
+                <input class="content" type="text" placeholder="수입/지출 내용을 입력하세요. (ex 학원비)">
             </div>
           </div>
           <div class="new-transaction__price">
             <h4 class="new-transaction__subtitle">금액</h4>
-            <input type="number" placeholder="금액을 입력하세요 (ex 10000)">
+            <input class="price" type="number" placeholder="금액을 입력하세요 (ex 10000)">
           </div>
-          <input class="submit" type="submit">
+          <input class="submit" type="submit" style="background-color: #ffd400;">
+          <!-- 왜 인지는 모르겠지만 css폴더에서 백그라운드컬러가 적용안됨 -->
         </form>
       </section>
     </main>
   </div>
+<script src="/js/new-transaction.js"></script>
 <script src="https://kit.fontawesome.com/d971984754.js" crossorigin="anonymous"></script>
 </body>
 </html>
