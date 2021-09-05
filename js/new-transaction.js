@@ -40,6 +40,9 @@ function upDateList (transactionList) {
   deleteBtn.style.backgroundColor = 'inherit';
   deleteBtn.style.border = `1px solid (0,0,0,0.1)`;
   deleteBtn.style.borderRadius = '5px';
+  deleteBtn.addEventListener('click', (event) => {
+    event.target.parentNode.parentNode.parentNode.parentNode.remove();
+  });
   span1.innerText = `${transactionList.year}-${transactionList.month}-${transactionList.date}`;
   span2.innerText = incomeExpenditure;
   span3.innerText = transactionList.content;
