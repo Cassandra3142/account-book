@@ -30,9 +30,11 @@
       </section>
       <section class="transaction-history">
         <div class="transaction-history__title">
-          <span>전체 내역</span>
-          <span>수입 내역</span>
-          <span>지출 내역</span>
+          <span class="history__all">전체 내역</span>
+          <span>|</span>
+          <span class="history__income">수입 내역</span>
+          <span>|</span>
+          <span class="history__expenditure">지출 내역</span>
         </div>
         <ul class="transaction-list"></ul>
       </section>
@@ -44,9 +46,9 @@
           <div class="new-transaction__date">
             <h4 class="new-transaction__subtitle">날짜</h4>
             <div class="new-transaction__date__box">
-              <input class="years" type="number" placeholder="년">
-              <input class="months" type="number" placeholder="월">
-              <input class="dates" type="number" placeholder="일">
+              <input class="years" type="number" required placeholder="년">
+              <input class="months" type="number" required placeholder="월">
+              <input class="dates" type="number" required placeholder="일">
             </div>
           </div>
           <div class="new-transaction__content">
@@ -56,12 +58,12 @@
                   <input class="income" type="button" value="수입">
                   <input class="expenditure" type="button" value="지출">
                 </div>
-                <input class="content" type="text" placeholder="수입/지출 내용을 입력하세요. (ex 학원비)">
+                <input class="content" type="text" required placeholder="수입/지출 내용을 입력하세요. (ex 학원비)">
             </div>
           </div>
           <div class="new-transaction__price">
             <h4 class="new-transaction__subtitle">금액</h4>
-            <input class="price" type="number" placeholder="금액을 입력하세요 (ex 10000)">
+            <input class="price" type="number" required placeholder="금액을 입력하세요 (ex 10000)">
           </div>
           <input class="submit" type="submit" style="background-color: #ffd400;">
           <!-- 왜 인지는 모르겠지만 css폴더에서 백그라운드컬러가 적용안됨 -->
